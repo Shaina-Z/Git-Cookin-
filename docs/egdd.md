@@ -143,8 +143,8 @@ When completing and sending orders, the player inputs commands to accomplish the
 \-You just got a job at a new restaurant and you want to make sure you keep your job. Move fast through the restaurant using git commands, ensuring quality service at Hungry Bytez.
 
 \#\# Storyboarding
-(./assets/<Storyboard1>.jpg)
-(./assets/<Storyboard2>.jpg)
+./assets/<Storyboard1>.jpg
+./assets/<Storyboard2>.jpg
 
 \# Assets Needed
 
