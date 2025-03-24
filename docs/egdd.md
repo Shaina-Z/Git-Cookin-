@@ -1,10 +1,10 @@
-\# Git Cookin’
+# Git Cookin’
 
-\#\# Elevator Pitch
+## Elevator Pitch
 
 You’ve finally achieved your dream of working at Hungry Bytez\! But things might be difficult to navigate. To make things easier, you’re gonna need git commands\! So you need to Git Cookin’.
 
-\#\# Influences (Brief)
+## Influences (Brief)
 
 \- Overcooked:  
   \- Medium: Game  
@@ -13,7 +13,7 @@ You’ve finally achieved your dream of working at Hungry Bytez\! But things mig
   \- Medium: Game  
   \- Explanation: How the customers give their orders allows for different food items with the same ingredients. Also, the “snobby” customers allow for some level of difficulty that makes sense in a restaurant scenario.
 
-\#\# Core Gameplay Mechanics (Brief)
+## Core Gameplay Mechanics (Brief)
 
 \- Input Git Commands to navigate different parts of the restaurant  
 \- Input Git Commands to fulfill and send out customer orders  
@@ -22,22 +22,22 @@ You’ve finally achieved your dream of working at Hungry Bytez\! But things mig
 \- Make most customers happy to advance to the next day  
 \- After completing all days of the week, the player wins the game
 
-\# Learning Aspects
+# Learning Aspects
 
-\#\# Learning Domains
+## Learning Domains
 
 Introductory Command Line Use
 
-\#\# Target Audiences
+## Target Audiences
 
 Beginner Programmers at the High School to Early College Level
 
-\#\# Target Contexts
+## Target Contexts
 
 - For supplementary use in a course that teaches Systems Programming at an introductory level  
 - This is meant to be used outside of the classroom on the student’s own time
 
-\#\# Learning Objectives
+## Learning Objectives
 
 \*Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.\*
 
@@ -45,14 +45,14 @@ Beginner Programmers at the High School to Early College Level
 \- By the end of the lesson, players will be able to explain how to run and access files.  
 \- By the end of the lesson, players will be able to replicate version control.
 
-\#\# Prerequisite Knowledge  
+## Prerequisite Knowledge  
    
 \*What do they need to know prior to trying this game?\*
 
 \- Prior to this game, players need to have basic programming knowledge  
 \- Prior to this game, players need to explain the concept of Git and/or other Git-like environments
 
-\#\# Assessment Measures
+## Assessment Measures
 
 A short pre-test and matching post-test will be given to the player to assess their learning. 
 
@@ -61,22 +61,22 @@ A short pre-test and matching post-test will be given to the player to assess th
 \- Given a branch, switch between branches  
 \- Given a branch, merge changes between branches and fix any potential issues
 
-\# What sets this project apart?
+# What sets this project apart?
 
 \- Having a safe environment for version control allows for more mistakes to be made and learned from without worrying about repercussions.   
 \- The art style creates a welcoming space for beginner programmers and converts usually non-user-friendly concepts to be more user-friendly.
 
-\# Player Interaction Patterns and Modes
+# Player Interaction Patterns and Modes
 
-\#\# Player Interaction Pattern
+## Player Interaction Pattern
 
 This is a game for one person, they type in commands on the screen and also click with their mouse.
 
-\#\# Player Modes
+## Player Modes
 
 \- Single-Player: Players advance through the levels of the game until they reach the end.
 
-\# Gameplay Objectives
+# Gameplay Objectives
 
 \- Make Customers Happy:  
     \- Description: When a customer's order is correct, the customer is satisfied and becomes happy  
@@ -85,13 +85,13 @@ This is a game for one person, they type in commands on the screen and also clic
 \-Complete the Week:  
    \- Description: After completing all six days of the week (Mon-Sat), the player has finished the game and wins
 
-\# Procedures/Actions
+# Procedures/Actions
 
 The player will be able to move their character using git commands to branch to certain parts of the restaurant and fulfill orders.
 
 When completing and sending orders, the player inputs commands to accomplish these tasks.
 
-\# Rules
+# Rules
 
 \-If the player gets an order wrong, the customer becomes angry and leaves the restaurant  
 \-Depending on how much time the player takes to complete an order, the customer may become angry and leave the restaurant  
@@ -103,14 +103,14 @@ When completing and sending orders, the player inputs commands to accomplish the
 \- Input commands to edit and run files  
 \- Input commands to list the names of files and branches
 
-\# Objects/Entities
+# Objects/Entities
 
 \- There’s a small restaurant with multiple rooms for players to switch through  
 \- There are orders that need to be fulfilled and sent out by the player  
 \- There is a small notepad that represents a Git Console that will always be on display  
 \- Periodically instructions will appear on the screen
 
-\#\# Core Gameplay Mechanics (Detailed)
+## Core Gameplay Mechanics (Detailed)
 
 \- Switching Between Rooms: Players will type in certain git commands to switch between rooms in order to complete the customer’s orders  
 \- Sending Out Orders to Customers: Players will be told to input specific git commands to fulfill different customer orders. They will be told to merge from specific branches for combined orders as well as modify recipe files in case a customer wants modifications.   
@@ -120,20 +120,20 @@ When completing and sending orders, the player inputs commands to accomplish the
 \- All Days Complete: After working through all six days, the player will be done for the week, and a message will appear showing that their restaurant is successfully open for business.
 
       
-\#\# Feedback
+## Feedback
 
 \-Fulfilling a customer’s order will make them either happy/angry, which will let the player know how they are doing.  
 \- There will be 5 stars at the top of the screen that will lose stars if the player isn’t fulfilling orders correctly.  
 \-If you successfully keep three or more stars, you will advance to the next day.  
 \-After all days are complete, the player will be given a victory message.
 
-\# Story and Gameplay
+# Story and Gameplay
 
-\#\# Presentation of Rules
+## Presentation of Rules
 
 \-Players will be told by their other coworkers in the game how to fulfill orders, and in doing so will learn the rules of the game.
 
-\#\# Presentation of Content
+## Presentation of Content
 
 \-The player will learn git commands by remembering what commands to use in different parts of the restaurant  
 \- The player will always have access to a cookbook that will show them commands that are frequently used to fulfill orders.
@@ -142,15 +142,15 @@ When completing and sending orders, the player inputs commands to accomplish the
 
 \-You just got a job at a new restaurant and you want to make sure you keep your job. Move fast through the restaurant using git commands, ensuring quality service at Hungry Bytez.
 
-\#\# Storyboarding
-./assets/<Storyboard1>.jpg
-./assets/<Storyboard2>.jpg
+## Storyboarding
+./assets/<Storyboard1.jpg>
+./assets/<Storyboard2.jpg>
 
-\# Assets Needed
+# Assets Needed
 
 \-The game should make the player feel warm and fuzzy. The aesthetics should be somewhat cartoonish or chibi, with the color palette full of warm tones.
 
-\#\# Graphical
+## Graphical
 
 \- Characters List  
   \- Customers: Needs to have three kinds of faces(netrual,happy,angry)  
@@ -163,7 +163,7 @@ When completing and sending orders, the player inputs commands to accomplish the
 	\-Cabinets: plain wooden cabinets that have the ingredients for the recipies  
  
 
-\#\# Audio
+## Audio
 
 \- Music List (Ambient sound)  
 	\-General Gameplay: upbeat and happy music, something like [Overcooked](https://www.youtube.com/watch?v=r_3RN7688rE).
@@ -175,7 +175,7 @@ When completing and sending orders, the player inputs commands to accomplish the
   \- Customer yells at you: To be Recorded  
   \-  New Customer comes in: [Hotel bell ringing - Sounds effect](https://www.youtube.com/watch?v=t7bxsTm4IyM&ab_channel=SparkleNeatcleaningServices)
 
-\# Metadata
+# Metadata
 
 \* Template created by Austin Cory Bart \<acbart@udel.edu\>, Mark Sheriff, Alec Markarian, and Benjamin Stanley.  
 \* Version 0.0.3  
