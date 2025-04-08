@@ -19,6 +19,8 @@ public class InputController : MonoBehaviour
         {
             if(inputText=="git checkout kitchen"){
             SceneManager.LoadScene("Kitchen");
+        }else if(inputText=="git checkout main"){
+            SceneManager.LoadScene("Main");
         }
         }
 }
