@@ -148,8 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d841f65e1a1314d87b3f205c66ea96d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Customer: {fileID: 3458710303546635122, guid: 3f4c295b04de04e75b7791b58c6fb027, type: 3}
-  spawnDelay: 5
+  Customer: {fileID: 9125843469410076969, guid: 3be8bf2e752c344ae9007e6178a19880, type: 3}
+  maxCustomer: 1
+  currentCustomer: 0
 --- !u!4 &246870897
 Transform:
   m_ObjectHideFlags: 0
