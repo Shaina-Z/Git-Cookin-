@@ -148,12 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d841f65e1a1314d87b3f205c66ea96d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Customer: {fileID: 9125843469410076969, guid: 3be8bf2e752c344ae9007e6178a19880, type: 3}
+  Customer: {fileID: 3460307707138309130, guid: 3be8bf2e752c344ae9007e6178a19880, type: 3}
   maxCustomer: 1
   currentCustomer: 0
-  despawnTime: 5
+  despawnTime: 30
   customerTimer: 0
-  newCustomer: {fileID: 9125843469410076969, guid: 3be8bf2e752c344ae9007e6178a19880, type: 3}
 --- !u!4 &246870897
 Transform:
   m_ObjectHideFlags: 0
@@ -163,7 +162,7 @@ Transform:
   m_GameObject: {fileID: 246870895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 296.5, y: -2, z: -11.219654}
+  m_LocalPosition: {x: 296.5, y: 226, z: -11.219654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -572,8 +571,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309493064}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 706, y: 302, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 795.3702, y: 503.6123, z: -766.2012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -868,7 +867,7 @@ Transform:
   m_GameObject: {fileID: 1869628053}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70647097, w: 0.7077421}
-  m_LocalPosition: {x: 711.911, y: 284.1711, z: -4.256338}
+  m_LocalPosition: {x: 791, y: 485, z: -4.256338}
   m_LocalScale: {x: 188.02086, y: 229.57867, z: 160.53372}
   m_ConstrainProportionsScale: 0
   m_Children: []
