@@ -17,7 +17,7 @@ public class InputController : MonoBehaviour
     }
      void OnInputFieldValueChanged(string inputText)
         {
-            if(inputText=="git checkout kitchen"){
+            if(inputText == "git checkout kitchen"){
             SceneManager.LoadScene("Kitchen");
         }else if(inputText=="git checkout main"){
             SceneManager.LoadScene("Main");
