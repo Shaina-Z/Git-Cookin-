@@ -10,21 +10,23 @@ public class GlobalManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-         if(currentCustomer<maxCustomer){
-            Instantiate(Customer,transform.position,transform.rotation);
-            currentCustomer++;
-        } 
         customerTimer += Time.deltaTime;
+         if(currentCustomer<maxCustomer){
+           Instantiate(Customer,transform.position,transform.rotation);
+            currentCustomer++;
+        }
         if(customerTimer>despawnTime){
             customerTimer=0;
-            Destroy(Customer);
+            var newCustomer = GameObject.Find("Customer(Clone)");
+            Destroy(newCustomer);
             currentCustomer--;
         }
+        
     }
 }
