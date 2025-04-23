@@ -15,7 +15,7 @@ public class InputController : MonoBehaviour
     {
         string inputText = inputField.text;
     }
-     void ChangeScene(string inputText)
+     public void ChangeScene(string inputText)
         {
             if(inputText=="git checkout kitchen"){
             SceneManager.LoadScene("Kitchen");
