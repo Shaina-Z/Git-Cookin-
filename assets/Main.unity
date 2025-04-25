@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d265493223d47ebb096ad1a66d2745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentTransform: {fileID: 246870897}
   Customer: {fileID: 4370189791916566919, guid: 3be8bf2e752c344ae9007e6178a19880, type: 3}
   maxCustomer: 1
   currentCustomer: 0

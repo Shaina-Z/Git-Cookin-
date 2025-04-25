@@ -1,7 +1,8 @@
 using UnityEngine;
-
+using System.Collections;
 public class GlobalManager : MonoBehaviour
 {
+ public Transform parentTransform;
      public GameObject Customer;
     public int maxCustomer=1;
     public int currentCustomer=0;
@@ -11,6 +12,7 @@ public class GlobalManager : MonoBehaviour
     void Start()
     {
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
+        StartCoroutine(WaitOneSecond());
        
     }
 
@@ -18,15 +20,22 @@ public class GlobalManager : MonoBehaviour
     void Update()
     {
          if(currentCustomer<maxCustomer){
-           Instantiate(Customer,transform.position,transform.rotation);
+           Instantiate(Customer,parentTransform);
             currentCustomer++;
         }
         if(TimeManager.GameTime>despawnTime){
             TimeManager.GameTime=0;
             var newCustomer = GameObject.Find("Customer(Clone)");
             Destroy(newCustomer);
+            WaitOneSecond();
             currentCustomer--;
         }
         
     }
+        IEnumerator WaitOneSecond()
+    {
+        yield return new WaitForSeconds(5);
+       
+    }
+
 }
