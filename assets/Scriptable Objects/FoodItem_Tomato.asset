@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625ada9cbd591cb41978c97542fcc1ab, type: 3}
   m_Name: FoodItem_Tomato
   m_EditorClassIdentifier: 
-  id: InventoryItem_Tomato
+  id: FoodItem_Tomato
   displayName: Tomato
   icon: {fileID: -3388724477974075000, guid: 994eb61299673c344943f42154bb7feb, type: 3}
-  prefab: {fileID: 0}
