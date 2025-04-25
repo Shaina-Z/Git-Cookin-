@@ -1,13 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 public class GlobalManager : MonoBehaviour
 {
  public Transform parentTransform;
      public GameObject Customer;
+
     public int maxCustomer=1;
     public int currentCustomer=0;
     public int despawnTime=30;
-    public TimeManager TimeManager;
+    public TimeManager TimeManager; 
+
+    public string[] customerSayings ={"One burger please!","One salad please!"};
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

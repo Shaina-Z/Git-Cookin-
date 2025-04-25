@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6140500643341935981}
   - component: {fileID: 2998689325396368680}
   - component: {fileID: 3377186236417780486}
+  - component: {fileID: 3423682682153066886}
   m_Layer: 5
   m_Name: Customer
   m_TagString: Untagged
@@ -72,10 +73,26 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: One Burger Please!
+--- !u!114 &3423682682153066886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4370189791916566919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f860a5c1e64994668a1f17591e8cd8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customerText: {fileID: 3377186236417780486}
+  customerSayings:
+  - One burger please!
+  - One salad please!
