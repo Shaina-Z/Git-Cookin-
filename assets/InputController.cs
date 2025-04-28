@@ -8,8 +8,7 @@ public class InputController : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){   
-         string inputText = inputField.GetComponent<UnityEngine.UI.Text>().text;
-
+         inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
     }
 
     // Update is called once per frame
@@ -17,9 +16,8 @@ public class InputController : MonoBehaviour
     {
         string inputText = inputField.text;
     }
-     public void ChangeScene(string inputText)
+     void OnInputFieldValueChanged(string inputText)
         {
-            Debug.Log(inputText);
             if(inputText=="git checkout kitchen"){
             SceneManager.LoadScene("Kitchen");
         }else if(inputText=="git checkout main"){
