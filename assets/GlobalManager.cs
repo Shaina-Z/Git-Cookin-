@@ -9,6 +9,8 @@ public GameObject StartScreen;
     public int maxCustomer=1;
     public int currentCustomer=0;
     public int despawnTime=30;
+    public int customerScore=0;
+    public Text Score;
     public TimeManager TimeManager; 
 
     public string[] customerSayings ={"One burger please!","One salad please!"};
@@ -24,6 +26,7 @@ public GameObject StartScreen;
     // Update is called once per frame
     void Update()
     {
+        Score.text="Customers: "+ customerScore.ToString()+"/5";
          if(currentCustomer<maxCustomer){
            Instantiate(Customer,parentTransform);
             currentCustomer++;
@@ -36,6 +39,10 @@ public GameObject StartScreen;
             currentCustomer--;
         }
         
+    }
+    [ContextMenu("Increase Score")]
+    public void addPoint(){
+        customerScore++;
     }
     public void startGame(){
         Time.timeScale = 1;
