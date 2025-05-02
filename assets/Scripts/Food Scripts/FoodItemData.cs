@@ -1,10 +1,16 @@
 using UnityEngine;
 
-[System.Serializable]
-[CreateAssetMenu(menuName = "Food Item Data")]
-public class FoodItemData : ScriptableObject
+public abstract class FoodItemData : ScriptableObject
 {
-    public string id;
+    public string itemName;
     public string displayName;
     public Sprite icon;
+}
+
+[System.Serializable]
+[CreateAssetMenu(menuName = "Food/Meat")]
+public class Meat : FoodItemData
+{
+    public bool isVegan;
+    public bool isCooked;
 }
