@@ -5,7 +5,8 @@ public class GlobalManager : MonoBehaviour
 {
  public Transform parentTransform;
      public GameObject Customer;
-public GameObject StartScreen;
+
+    public GameObject StartScreen;
     public int maxCustomer=1;
     public int currentCustomer=0;
     public int despawnTime=30;
@@ -44,14 +45,14 @@ public GameObject StartScreen;
     public void addPoint(){
         customerScore++;
     }
-    public void startGame(){
-        Time.timeScale = 1;
-        StartScreen.SetActive(false);
-    }
         IEnumerator WaitOneSecond()
     {
         yield return new WaitForSeconds(5);
        
+    }
+    public void startGame(){
+        Time.timeScale = 1;
+        StartScreen.SetActive(false);
     }
 
 }
