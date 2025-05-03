@@ -3,6 +3,6 @@ using UnityEngine;
 [System.Serializable]
 public class InventorySlot
 {
-    public FoodItemData item;
+    public FoodItem item;
     public int quantity;
 }
