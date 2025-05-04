@@ -5,9 +5,10 @@ using UnityEngine.UI;
 public class InputController : MonoBehaviour
 {
      public InputField inputField;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){   
-        inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
+         inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
     }
 
     // Update is called once per frame
