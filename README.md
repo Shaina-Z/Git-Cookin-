@@ -12,4 +12,4 @@
 5. Gameplay Video
     (Coming Soon)
 6. Education Game Design Document
-    [EGDD](docs/egdd.md)
+    [EGDD](egdd.md)
