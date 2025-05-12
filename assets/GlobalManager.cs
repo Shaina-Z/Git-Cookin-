@@ -6,8 +6,7 @@ public class GlobalManager : MonoBehaviour
  public Transform parentTransform;
      public GameObject Customer;
 
-    public GameObject StartScreen;
-    public int maxCustomer=1;
+        public int maxCustomer=1;
     public int currentCustomer=0;
     public int despawnTime=30;
     public int customerScore=0;
@@ -18,7 +17,6 @@ public class GlobalManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Time.timeScale = 0;
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         StartCoroutine(WaitOneSecond());
        
@@ -50,9 +48,4 @@ public class GlobalManager : MonoBehaviour
         yield return new WaitForSeconds(5);
        
     }
-    public void startGame(){
-        Time.timeScale = 1;
-        StartScreen.SetActive(false);
-    }
-
 }
