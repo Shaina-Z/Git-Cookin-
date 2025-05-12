@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 public class GlobalManager : MonoBehaviour
 {
@@ -37,7 +38,9 @@ public class GlobalManager : MonoBehaviour
             WaitOneSecond();
             currentCustomer--;
         }
-        
+        if(TimeManager.GameTime>100&&customerScore<5){
+            SceneManager.LoadScene("GameOver");
+        }
     }
     [ContextMenu("Increase Score")]
     public void addPoint(){
