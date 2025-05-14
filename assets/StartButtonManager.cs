@@ -17,4 +17,8 @@ public class StartButtonManager : MonoBehaviour
     public void startGame(){
         SceneManager.LoadScene("Main"); 
     }
+    
+    public void replay(){
+        SceneManager.LoadScene("Start"); 
+    }
 }
