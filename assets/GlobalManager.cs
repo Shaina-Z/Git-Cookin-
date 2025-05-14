@@ -13,7 +13,7 @@ public class GlobalManager : MonoBehaviour
     public int customerScore=0;
     public Text Score;
     public TimeManager TimeManager; 
-
+    public int i=1;
     public string[] customerSayings ={"One burger please!","One salad please!"};
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,12 +31,12 @@ public class GlobalManager : MonoBehaviour
            Instantiate(Customer,parentTransform);
             currentCustomer++;
         }
-        if(TimeManager.GameTime>despawnTime){
-            TimeManager.GameTime=0;
+        if(TimeManager.GameTime>despawnTime*i){
             var newCustomer = GameObject.Find("Customer(Clone)");
             Destroy(newCustomer);
             WaitOneSecond();
             currentCustomer--;
+            i=i+1;
         }
         if(TimeManager.GameTime>100&&customerScore<5){
             SceneManager.LoadScene("GameOver");
