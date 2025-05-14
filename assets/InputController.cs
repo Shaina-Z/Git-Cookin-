@@ -5,7 +5,10 @@ using UnityEngine.UI;
 public class InputController : MonoBehaviour
 {
      public InputField inputField;
-
+    public GameObject Bun;
+    public GameObject Patty;
+    public GameObject Lettuce;
+    public GameObject Tomato;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){   
          inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
@@ -22,6 +25,12 @@ public class InputController : MonoBehaviour
             SceneManager.LoadScene("Kitchen");
         }else if(inputText=="git checkout main"){
             SceneManager.LoadScene("Main");
+        }
+        if(inputText=="git pull bun"){
+            Instantiate(Bun);
+        }
+        if (inputText=="git pull patty"){
+            Instatiate(Burger);
         }
         }
 }

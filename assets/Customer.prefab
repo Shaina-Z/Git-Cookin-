@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: One Burger Please!
+  m_Text: 
 --- !u!114 &3423682682153066886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerText: {fileID: 3377186236417780486}
+  TimeManager: {fileID: 0}
   customerSayings:
   - One burger please!
   - One salad please!
