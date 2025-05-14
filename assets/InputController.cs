@@ -10,6 +10,7 @@ public class InputController : MonoBehaviour
     public GameObject Lettuce;
     public GameObject Tomato;
     public GameObject PlainBurger;
+    public GameObject[] Inventory = new GameObject[10];
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){   
          inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
@@ -29,8 +30,9 @@ public class InputController : MonoBehaviour
         }
         if(inputText=="git pull bun"){
             Instantiate(Bun);
+            Inventory.Add(Bun);
         }
-        if (inputText=="git pull patty"){
+        if (inputText=="git pull patty"&&Inventory[0]==Bun){
             Instantiate(PlainBurger);
         }
         }
