@@ -10,10 +10,12 @@ public class InputController : MonoBehaviour
     public GameObject Lettuce;
     public GameObject Tomato;
     public GameObject PlainBurger;
+    public Script GlobalManager; 
      public List<GameObject> Inventory;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){   
          inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
+         GlobalManager = GameObject.FindGameObjectWithTag("GlobalManager").GetComponent<GlobalManager>();
     }
 
     // Update is called once per frame
@@ -34,8 +36,11 @@ public class InputController : MonoBehaviour
         }
         if (inputText=="git pull patty"&&Inventory[0]==Bun){
             Instantiate(PlainBurger);
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
+        }
+        if(inputText=="git commit"&&GameObject.Find("PlainBurger(Clone)")){
+                GlobalManager.addPoint();
         }
         }
-        
+
 }
