@@ -11,6 +11,7 @@ public class InputController : MonoBehaviour
     public GameObject Lettuce;
     public GameObject Tomato;
     public GameObject PlainBurger;
+    public GameObject Placeholder;
     public GlobalManager GlobalManager; 
      public List<GameObject> Inventory;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,11 +33,11 @@ public class InputController : MonoBehaviour
             SceneManager.LoadScene("Main");
         }
         if(inputText=="git pull bun"){
-            Instantiate(Bun);
+            Instantiate(Bun,Placeholder.transform);
             Inventory.Add(Bun);
         }
         if (inputText=="git merge patty"){
-            Instantiate(PlainBurger);
+            Instantiate(PlainBurger,Placeholder.transform);
             DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
         }
         if(inputText=="git commit"&&GameObject.Find("PlainBurger(Clone)")){
