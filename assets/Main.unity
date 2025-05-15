@@ -532,6 +532,7 @@ MonoBehaviour:
   Lettuce: {fileID: 0}
   Tomato: {fileID: 0}
   PlainBurger: {fileID: 0}
+  GlobalManager: {fileID: 246870898}
   Inventory: []
 --- !u!1 &897299444
 GameObject:
@@ -1217,6 +1218,7 @@ MonoBehaviour:
   Lettuce: {fileID: 0}
   Tomato: {fileID: 0}
   PlainBurger: {fileID: 0}
+  GlobalManager: {fileID: 0}
   Inventory: []
 --- !u!1 &1869628053
 GameObject:

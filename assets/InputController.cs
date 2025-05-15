@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System.Collections;
 public class InputController : MonoBehaviour
 {
      public InputField inputField;
@@ -10,7 +11,7 @@ public class InputController : MonoBehaviour
     public GameObject Lettuce;
     public GameObject Tomato;
     public GameObject PlainBurger;
-    public Script GlobalManager; 
+    public GlobalManager GlobalManager; 
      public List<GameObject> Inventory;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){   
