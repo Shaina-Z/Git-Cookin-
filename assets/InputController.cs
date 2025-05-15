@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using System.Collections.Generic;
 public class InputController : MonoBehaviour
 {
      public InputField inputField;
@@ -10,7 +10,7 @@ public class InputController : MonoBehaviour
     public GameObject Lettuce;
     public GameObject Tomato;
     public GameObject PlainBurger;
-    public GameObject[] Inventory = new GameObject[10];
+     public List<GameObject> Inventory;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){   
          inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
@@ -34,6 +34,8 @@ public class InputController : MonoBehaviour
         }
         if (inputText=="git pull patty"&&Inventory[0]==Bun){
             Instantiate(PlainBurger);
+            DontDestroyOnLoad(gameObject);
         }
         }
+        
 }

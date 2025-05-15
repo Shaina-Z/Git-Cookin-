@@ -541,7 +541,8 @@ MonoBehaviour:
   Patty: {fileID: 1276195947}
   Lettuce: {fileID: 609705010}
   Tomato: {fileID: 1423158440}
-  PlainBurger: {fileID: 0}
+  PlainBurger: {fileID: 87610833}
+  Inventory: []
 --- !u!114 &415761331
 MonoBehaviour:
   m_ObjectHideFlags: 0
