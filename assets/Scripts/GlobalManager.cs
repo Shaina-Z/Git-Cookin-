@@ -15,11 +15,13 @@ public class GlobalManager : MonoBehaviour
     public TimeManager TimeManager; 
     public int i=1;
     public string[] customerSayings ={"One burger please!","One salad please!"};
+    AudioSource Correct_ding;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         StartCoroutine(WaitOneSecond());
+         Correct_ding = GetComponent<AudioSource>();
        
     }
 
@@ -43,8 +45,10 @@ public class GlobalManager : MonoBehaviour
         }
     }
     [ContextMenu("Increase Score")]
-    public void addPoint(){
+    public void addPoint()
+    {
         customerScore++;
+        Correct_ding.Play();
     }
         IEnumerator WaitOneSecond()
     {
