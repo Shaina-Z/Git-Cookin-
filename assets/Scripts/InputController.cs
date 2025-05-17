@@ -37,7 +37,7 @@ public class InputController : MonoBehaviour
             Inventory.Add(Bun);
         }
         if (inputText=="git merge patty"){
-            Instantiate(PlainBurger,Placeholder.transform);
+            Instantiate(PlainBurger);
             DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
         }
         if(inputText=="git commit"&&GameObject.Find("PlainBurger(Clone)")){
