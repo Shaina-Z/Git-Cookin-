@@ -9,6 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 625ada9cbd591cb41978c97542fcc1ab, type: 3}
-  m_Name: MeatFoodItem_Chicken
-  m_EditorClassIdentifier: Assembly-CSharp::Meat
+  m_Script: {fileID: 11500000, guid: bb696664a43c94b488204d830434296b, type: 3}
+  m_Name: Lettuce
+  m_EditorClassIdentifier: 
+  itemName: 
+  displayName: 
+  icon: {fileID: 0}
+  isPrepped: 0
+  isWashed: 0
+  cuttingMethod: 

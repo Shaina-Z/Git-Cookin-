@@ -14,7 +14,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public bool AddItem(FoodItem item, int amount = 1)
+    public bool AddItem(FoodItemData item, int amount = 1)
     {
         // Look for existing stackable slot
         for (int i = 0; i < slots.Length; i++)

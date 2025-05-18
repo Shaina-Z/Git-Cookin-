@@ -1,35 +1,46 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 public class InputController : MonoBehaviour
 {
-     public InputField inputField;
+    public InputField inputField;
+    private string currentInputText = "";
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start(){   
-         inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
+    void Start()
+    {
+        inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        string inputText = inputField.text;
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            if (currentInputText.Contains("git checkout kitchen"))
+            {
+                SceneManager.LoadScene("Kitchen");
+                Debug.Log("Skibidi Rizz");
+            }
+            else if (currentInputText.Contains("git checkout main"))
+            {
+                SceneManager.LoadScene("Main");
+                Debug.Log("Tralalero Tralala");
+            }
+            else if (currentInputText.Contains("git checkout fridge"))
+            {
+                SceneManager.LoadScene("Fridge");
+                Debug.Log("Ballerina Cappucina");
+            }
+            else if (currentInputText.Contains("git checkout pantry"))
+            {
+                SceneManager.LoadScene("Pantry");
+                Debug.Log("Brr Brr Patapim");
+            }
+        }
     }
-     void OnInputFieldValueChanged(string inputText)
-        {
-            if(inputText=="git checkout kitchen")
-        {
-            SceneManager.LoadScene("Kitchen");
-        }else if(inputText=="git checkout main")
-        {
-            SceneManager.LoadScene("Main");
-        }else if (inputText=="git checkout fridge")
-        {
-            SceneManager.LoadScene("Fridge");
-        }else if(inputText == "git checkout pantry")
-        {
-            SceneManager.LoadScene("Pantry");
-        }
-        }
+
+    void OnInputFieldValueChanged(string inputText)
+    {
+        currentInputText = inputText;
+    }
 }
