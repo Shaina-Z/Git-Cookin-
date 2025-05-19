@@ -15,15 +15,13 @@ public class GlobalManager : MonoBehaviour
     public TimeManager TimeManager; 
     public int i=1;
     AudioSource Correct_ding;
-    AudioSource Background_music;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         StartCoroutine(WaitOneSecond());
         Correct_ding = GetComponent<AudioSource>();
-        Background_music = GetComponent<AudioSource>();
-        DontDestroyOnLoad(Background_music);
        
     }
 

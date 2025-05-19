@@ -7,7 +7,7 @@ public class MusicManager : MonoBehaviour
     void Start()
     {
         Background_music = GetComponent<AudioSource>();
-        
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
