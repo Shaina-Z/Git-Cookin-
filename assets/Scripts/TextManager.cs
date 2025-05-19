@@ -17,7 +17,7 @@ public class TextManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        customerText.text=customerSayings[Random.Range(0,3)];
+        customerText.text=customerSayings[Random.Range(0,2)];
         if(TimeManager.GameTime==30){
             customerText.text="This sucks! I'm outta here!";
             WaitOneSecond();
