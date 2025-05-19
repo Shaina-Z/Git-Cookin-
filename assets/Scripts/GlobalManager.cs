@@ -40,9 +40,6 @@ public class GlobalManager : MonoBehaviour
             currentCustomer--;
             i=i+1;
         }
-        if(TimeManager.GameTime>100&&customerScore<5){
-            SceneManager.LoadScene("GameOver");
-        }
     }
     [ContextMenu("Increase Score")]
     public void addPoint()
