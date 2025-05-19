@@ -50,16 +50,19 @@ public class InputController : MonoBehaviour
         {
             Destroy(GameObject.Find("Plainburger(Clone)"));
             Instantiate(LettuceBurger);
+            DontDestroyOnLoad(GameObject.Find("LettuceBurger(Clone)"));
         }
         if (inputText == "git merge tomato")
         {
             Destroy(GameObject.Find("LettuceBurger(Clone)"));
             Instantiate(ComboBurger);
+            DontDestroyOnLoad(GameObject.Find("ComboBurger(Clone)"));
         }
         if (inputText == "git merge onion")
         {
             Destroy(GameObject.Find("FullBurger(Clone)"));
             Instantiate(FullBurger);
+            DontDestroyOnLoad(GameObject.Find("FullBurger(Clone)"));
         }
         if (inputText == "git commit" && GameObject.Find("PlainBurger(Clone)"))
         {
