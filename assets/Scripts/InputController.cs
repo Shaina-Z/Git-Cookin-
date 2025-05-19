@@ -10,7 +10,13 @@ public class InputController : MonoBehaviour
     public GameObject Patty;
     public GameObject Lettuce;
     public GameObject Tomato;
+    public GameObject Onion;
     public GameObject PlainBurger;
+    public GameObject LettuceBurger;
+
+    public GameObject ComboBurger;
+
+    public GameObject FullBurger;
     public GameObject Placeholder;
     public GlobalManager GlobalManager; 
      public List<GameObject> Inventory;
@@ -40,8 +46,24 @@ public class InputController : MonoBehaviour
             Instantiate(PlainBurger);
             DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
         }
-        if(inputText=="git commit"&&GameObject.Find("PlainBurger(Clone)")){
-                GlobalManager.addPoint();
+        if (inputText == "git merge lettuce")
+        {
+            Destroy(GameObject.Find("Plainburger(Clone)"));
+            Instantiate(LettuceBurger);
+        }
+        if (inputText == "git merge tomato")
+        {
+            Destroy(GameObject.Find("LettuceBurger(Clone)"));
+            Instantiate(ComboBurger);
+        }
+        if (inputText == "git merge onion")
+        {
+            Destroy(GameObject.Find("FullBurger(Clone)"));
+            Instantiate(FullBurger);
+        }
+        if (inputText == "git commit" && GameObject.Find("PlainBurger(Clone)"))
+        {
+            GlobalManager.addPoint();
         }
         }
 
