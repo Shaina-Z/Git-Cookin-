@@ -72,30 +72,30 @@ public class InputController : MonoBehaviour
             Instantiate(FullBurger);
             DontDestroyOnLoad(GameObject.Find("FullBurger(Clone)"));
         }
-        if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[0] && GameObject.Find("PlainBurger(Clone)"))
+        if (inputText == "git commit"&& GameObject.Find("PlainBurger(Clone)"))
         {
             GlobalManager.addPoint();
-        }else{
-            GlobalManager.removePoint();
-        }
-        if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
-        {
-            GlobalManager.addPoint();
-        }else{
-            GlobalManager.removePoint();
-        }
-        if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[2] && GameObject.Find("ComboBurger(Clone)"))
-        {
-            GlobalManager.addPoint();
-        }else{
-            GlobalManager.removePoint();
-        }
-         if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[3] && GameObject.Find("FullBurger(Clone)"))
-        {
-            GlobalManager.addPoint();
-        }else{
-            GlobalManager.removePoint();
-        }
+        }//else{
+        //     GlobalManager.removePoint();
+        // }
+        // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
+        // {
+        //     GlobalManager.addPoint();
+        // }else{
+        //     GlobalManager.removePoint();
+        // }
+        // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[2] && GameObject.Find("ComboBurger(Clone)"))
+        // {
+        //     GlobalManager.addPoint();
+        // }else{
+        //     GlobalManager.removePoint();
+        // }
+        //  if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[3] && GameObject.Find("FullBurger(Clone)"))
+        // {
+        //     GlobalManager.addPoint();
+        // }else{
+        //     GlobalManager.removePoint();
+        // }
         }
 
 }
