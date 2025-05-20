@@ -75,7 +75,7 @@ public class InputController : MonoBehaviour
         if (inputText == "git commit"&& GameObject.Find("PlainBurger(Clone)"))
         {
             GlobalManager.addPoint();
-        }//else{
+        }// supposed to either add or remove points based on if the order is correct or not else{
         //     GlobalManager.removePoint();
         // }
         // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
