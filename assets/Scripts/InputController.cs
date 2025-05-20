@@ -18,12 +18,15 @@ public class InputController : MonoBehaviour
 
     public GameObject FullBurger;
     public GameObject Placeholder;
-    public GlobalManager GlobalManager; 
+    public GlobalManager GlobalManager;
+    public TextManager TextManager;
      public List<GameObject> Inventory;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start(){   
-         inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
-         GlobalManager = GameObject.FindGameObjectWithTag("GlobalManager").GetComponent<GlobalManager>();
+    void Start()
+    {
+        inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
+        GlobalManager = GameObject.FindGameObjectWithTag("GlobalManager").GetComponent<GlobalManager>();
+        TextManager = GameObject.FindGameObjectWithTag("TextManager").GetComponent<TextManager>();
     }
 
     // Update is called once per frame
@@ -31,18 +34,23 @@ public class InputController : MonoBehaviour
     {
         string inputText = inputField.text;
     }
-     void OnInputFieldValueChanged(string inputText)
+    void OnInputFieldValueChanged(string inputText)
+    {
+        if (inputText == "git checkout kitchen")
         {
-            if(inputText=="git checkout kitchen"){
             SceneManager.LoadScene("Kitchen");
-        }else if(inputText=="git checkout main"){
+        }
+        else if (inputText == "git checkout main")
+        {
             SceneManager.LoadScene("Main");
         }
-        if(inputText=="git pull bun"){
-            Instantiate(Bun,Placeholder.transform);
+        if (inputText == "git pull bun")
+        {
+            Instantiate(Bun, Placeholder.transform);
             Inventory.Add(Bun);
         }
-        if (inputText=="git merge patty"){
+        if (inputText == "git merge patty")
+        {
             Instantiate(PlainBurger);
             DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
         }
@@ -64,9 +72,29 @@ public class InputController : MonoBehaviour
             Instantiate(FullBurger);
             DontDestroyOnLoad(GameObject.Find("FullBurger(Clone)"));
         }
-        if (inputText == "git commit" && GameObject.Find("PlainBurger(Clone)"))
+        if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[0] && GameObject.Find("PlainBurger(Clone)"))
         {
             GlobalManager.addPoint();
+        }else{
+            GlobalManager.removePoint();
+        }
+        if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
+        {
+            GlobalManager.addPoint();
+        }else{
+            GlobalManager.removePoint();
+        }
+        if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[2] && GameObject.Find("ComboBurger(Clone)"))
+        {
+            GlobalManager.addPoint();
+        }else{
+            GlobalManager.removePoint();
+        }
+         if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[3] && GameObject.Find("FullBurger(Clone)"))
+        {
+            GlobalManager.addPoint();
+        }else{
+            GlobalManager.removePoint();
         }
         }
 

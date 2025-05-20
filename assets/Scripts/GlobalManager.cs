@@ -15,20 +15,22 @@ public class GlobalManager : MonoBehaviour
     public TimeManager TimeManager; 
     public int i=1;
     AudioSource Correct_ding;
-    
+    AudioSource Wrong_buzzer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         StartCoroutine(WaitOneSecond());
         Correct_ding = GetComponent<AudioSource>();
+        Wrong_buzzer = GetComponent<AudioSource>();
        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Score.text="Customers: "+ customerScore.ToString()+"/5";
+        Score.text="Customers: "+ customerScore.ToString();
          if(currentCustomer<maxCustomer){
            Instantiate(Customer,parentTransform);
             currentCustomer++;
@@ -46,6 +48,11 @@ public class GlobalManager : MonoBehaviour
     {
         customerScore++;
         Correct_ding.Play();
+    }
+    public void removePoint()
+    {
+        customerScore--;
+        Wrong_buzzer.Play();
     }
         IEnumerator WaitOneSecond()
     {

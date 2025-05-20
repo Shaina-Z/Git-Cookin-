@@ -12,12 +12,12 @@ public class TextManager : MonoBehaviour
     {
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         StartCoroutine(WaitOneSecond());
+        customerText.text=customerSayings[Random.Range(0,2)];
     }
 
     // Update is called once per frame
     void Update()
     {
-        customerText.text=customerSayings[Random.Range(0,2)];
         if(TimeManager.GameTime==30){
             customerText.text="This sucks! I'm outta here!";
             WaitOneSecond();
