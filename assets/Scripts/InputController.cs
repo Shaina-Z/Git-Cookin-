@@ -34,21 +34,19 @@ public class InputController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
         {
             if (currentInputText.Contains("git checkout kitchen"))
                 SceneManager.LoadScene("Kitchen");
             else if (currentInputText.Contains("git checkout main"))
                 SceneManager.LoadScene("Main");
-            else if (currentInputText.Contains("git checkout fridge"))
-                SceneManager.LoadScene("Fridge");
-            else if (currentInputText.Contains("git checkout pantry"))
-                SceneManager.LoadScene("Pantry");
+            //else if (currentInputText.Contains("git checkout fridge"))
+                //SceneManager.LoadScene("Fridge");
+            //else if (currentInputText.Contains("git checkout pantry"))
+                //SceneManager.LoadScene("Pantry");
 
-            // Process burger-related commands on enter
             HandleGitCommands(currentInputText);
 
-            // Clear input
             inputField.text = "";
         }
     }
