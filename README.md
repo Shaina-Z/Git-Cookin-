@@ -1,6 +1,6 @@
 # Git-Cookin
 ## Game Description
-   Git Cookin' is a high-paced, single-player educational game where you fulfill food orders by using Git commands.
+   Git Cookin' is a high-paced, single-player educational game where you fulfill food orders by using Git commands. Fulfill as many orders as you can before the time runs out, so Git Cookin'!
 ## Developers
    - Shaina Zaccagnino (shainaz@udel.edu)
    - Axel Rodriguiez-Leon (axelarl@udel.edu)
