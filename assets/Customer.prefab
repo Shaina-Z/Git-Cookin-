@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 264.4067, y: -101}
-  m_SizeDelta: {x: 375.0192, y: 56.5755}
+  m_AnchoredPosition: {x: 235, y: -275}
+  m_SizeDelta: {x: 724.8718, y: 428.9189}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2998689325396368680
 CanvasRenderer:
@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: One Burger Please!
+  m_Text: 
 --- !u!114 &3423682682153066886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +93,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerText: {fileID: 3377186236417780486}
+  TimeManager: {fileID: 0}
   customerSayings:
   - One burger please!
-  - One salad please!
+  - One burger with lettuce please!
+  - One burger with lettuce and tomato please!
+  - Give me the whole package!

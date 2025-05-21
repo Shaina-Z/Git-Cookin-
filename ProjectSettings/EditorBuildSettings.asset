@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 9ada103af214a430581ccf5b0289ec8d
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 6001c597271ed47e38388db7f3ecd965
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: f05106dae7f374f85be9b35b30da1bc1
   - enabled: 1
-    path: Assets/Scenes/Fridge.unity
-    guid: 55186734da3020d408bda1865a031041
-  - enabled: 1
-    path: Assets/Scenes/Pantry.unity
-    guid: b94a1ee1b97bf644186dc7fc7614019d
+    path: Assets/Scenes/GameOver.unity
+    guid: 07aa2ad7c3d7c42a78e86efa9f3b0ea7
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
