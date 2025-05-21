@@ -119,5 +119,4 @@ public class InputController : MonoBehaviour
         GlobalManager.customerScore--;
         Wrong_buzzer.Play();
     }
-
 }
