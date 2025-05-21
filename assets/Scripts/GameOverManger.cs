@@ -16,7 +16,7 @@ public class GameOverManger : MonoBehaviour
     void Update()
     {
         DontDestroyOnLoad(gameObject);
-        if (TimeManager.GameTime > 100 && GlobalManager.customerScore < 5)
+        if (TimeManager.GameTime > 100)
         {
             SceneManager.LoadScene("GameOver");
         }
