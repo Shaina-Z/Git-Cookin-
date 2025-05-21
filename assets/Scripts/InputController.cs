@@ -20,7 +20,9 @@ public class InputController : MonoBehaviour
     public GameObject Placeholder;
     public GlobalManager GlobalManager;
     public TextManager TextManager;
-     public List<GameObject> Inventory;
+    public List<GameObject> Inventory;
+
+    private string currentInputText = "";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,101 +34,74 @@ public class InputController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string inputText = inputField.text;
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            if (currentInputText.Contains("git checkout kitchen"))
+                SceneManager.LoadScene("Kitchen");
+            else if (currentInputText.Contains("git checkout main"))
+                SceneManager.LoadScene("Main");
+            else if (currentInputText.Contains("git checkout fridge"))
+                SceneManager.LoadScene("Fridge");
+            else if (currentInputText.Contains("git checkout pantry"))
+                SceneManager.LoadScene("Pantry");
+
+            // Process burger-related commands on enter
+            HandleGitCommands(currentInputText);
+
+            // Clear input
+            inputField.text = "";
+        }
     }
+
     void OnInputFieldValueChanged(string inputText)
     {
-        if (inputText == "git checkout kitchen")
-        {
-            SceneManager.LoadScene("Kitchen");
-        }
-        else if (inputText == "git checkout main")
-        {
-            SceneManager.LoadScene("Main");
-        }
+        currentInputText = inputText;
+    }
+
+    void HandleGitCommands(string inputText)
+    {
         if (inputText == "git pull bun")
         {
             Instantiate(Bun, Placeholder.transform);
             Inventory.Add(Bun);
         }
-        if (inputText == "git merge patty")
+        else if (inputText == "git merge patty")
         {
             Instantiate(PlainBurger);
             DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
         }
-        if (inputText == "git merge lettuce")
+        else if (inputText == "git merge lettuce")
         {
-            DestroyImmediate(GameObject.Find("Plainburger(Clone)"));
+            DestroyImmediate(GameObject.Find("PlainBurger(Clone)"));
             Instantiate(LettuceBurger);
             DontDestroyOnLoad(GameObject.Find("LettuceBurger(Clone)"));
         }
-        if (inputText == "git merge tomato")
+        else if (inputText == "git merge tomato")
         {
             DestroyImmediate(GameObject.Find("LettuceBurger(Clone)"));
             Instantiate(ComboBurger);
             DontDestroyOnLoad(GameObject.Find("ComboBurger(Clone)"));
         }
-        if (inputText == "git merge onion")
+        else if (inputText == "git merge onion")
         {
-            DestroyImmediate(GameObject.Find("FullBurger(Clone)"));
+            DestroyImmediate(GameObject.Find("ComboBurger(Clone)"));
             Instantiate(FullBurger);
             DontDestroyOnLoad(GameObject.Find("FullBurger(Clone)"));
         }
-        if (inputText == "git commit"&& GameObject.Find("PlainBurger(Clone)"))
+        else if (inputText == "git commit")
         {
-            GlobalManager.addPoint();
-        }// supposed to either add or remove points based on if the order is correct or not else{
-        //     GlobalManager.removePoint();
-        // }
-        // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
-        // {
-        //     GlobalManager.addPoint();
-        // }else{
-        //     GlobalManager.removePoint();
-        // }
-        // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[2] && GameObject.Find("ComboBurger(Clone)"))
-        // {
-        //     GlobalManager.addPoint();
-        // }else{
-        //     GlobalManager.removePoint();
-        // }
-        //  if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[3] && GameObject.Find("FullBurger(Clone)"))
-        // {
-        //     GlobalManager.addPoint();
-        // }else{
-        //     GlobalManager.removePoint();
-        // }
-        }
+            string customerRequest = TextManager.customerText.text;
 
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.KeypadEnter))
-            {
-                if (currentInputText.Contains("git checkout kitchen"))
-                {
-                    SceneManager.LoadScene("Kitchen");
-                    Debug.Log("Skibidi Rizz");
-                }
-                else if (currentInputText.Contains("git checkout main"))
-                {
-                    SceneManager.LoadScene("Main");
-                    Debug.Log("Tralalero Tralala");
-                }
-                else if (currentInputText.Contains("git checkout fridge"))
-                {
-                    SceneManager.LoadScene("Fridge");
-                    Debug.Log("Ballerina Cappucina");
-                }
-                else if (currentInputText.Contains("git checkout pantry"))
-                {
-                    SceneManager.LoadScene("Pantry");
-                    Debug.Log("Brr Brr Patapim");
-                }
-            }
-        }
-
-        void OnInputFieldValueChanged(string inputText)
-        {
-            currentInputText = inputText;
+            if (customerRequest == TextManager.customerSayings[0] && GameObject.Find("PlainBurger(Clone)"))
+                GlobalManager.addPoint();
+            else if (customerRequest == TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
+                GlobalManager.addPoint();
+            else if (customerRequest == TextManager.customerSayings[2] && GameObject.Find("ComboBurger(Clone)"))
+                GlobalManager.addPoint();
+            else if (customerRequest == TextManager.customerSayings[3] && GameObject.Find("FullBurger(Clone)"))
+                GlobalManager.addPoint();
+            else
+                GlobalManager.removePoint();
         }
     }
+}
