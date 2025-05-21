@@ -16,8 +16,8 @@
    https://drive.google.com/file/d/1_dez2x4QM6_ON1pGBYCUUs5dGvRROiOd/view?usp=sharing
 ## Education Game Design Document
    [EGDD](egdd.md)
-##Credits
+## Credits
    All sounds brought to you by Uppbeat, and some designs made in Canva.
-##Links
+## Links
    Presentation: https://docs.google.com/presentation/d/1weN4aPn2BDvlAkksKMQIO1LSqjlYH2kBYr9dbqxiCIg/edit?usp=sharing
    Game: https://shaina-z.github.io/Git-Cookin-/ 
