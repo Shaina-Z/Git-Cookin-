@@ -18,7 +18,6 @@ public class InputController : MonoBehaviour
 
     public GameObject FullBurger;
     public GameObject Placeholder;
-    public ScoreManager ScoreManager;
     public GlobalManager GlobalManager;
     public TextManager TextManager;
     AudioSource Wrong_buzzer;
@@ -27,7 +26,6 @@ public class InputController : MonoBehaviour
     void Start()
     {
         inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
-        ScoreManager = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
         TextManager = GameObject.FindGameObjectWithTag("TextManager").GetComponent<TextManager>();
         GlobalManager = GameObject.FindGameObjectWithTag("GlobalManager").GetComponent<GlobalManager>();
         Wrong_buzzer = GetComponent<AudioSource>();
@@ -105,7 +103,7 @@ public class InputController : MonoBehaviour
     }
          public void removePoint()
     {
-        ScoreManager.customerScore--;
+        GlobalManager.customerScore--;
         Wrong_buzzer.Play();
     }
 

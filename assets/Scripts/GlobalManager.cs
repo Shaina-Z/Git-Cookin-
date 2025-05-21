@@ -10,9 +10,9 @@ public class GlobalManager : MonoBehaviour
         public int maxCustomer=1;
     public int currentCustomer=0;
     public int despawnTime=30;
-   
+   public Text Score;
     public TimeManager TimeManager;
-    public ScoreManager ScoreManager;
+    public int customerScore = 0; 
     public int i = 1;
     AudioSource Correct_ding;
 
@@ -21,7 +21,6 @@ public class GlobalManager : MonoBehaviour
     void Start()
     {
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
-        ScoreManager = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
         StartCoroutine(WaitOneSecond());
         Correct_ding = GetComponent<AudioSource>();
 
@@ -31,7 +30,7 @@ public class GlobalManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Score.text="Customers: "+ customerScore.ToString();
          if(currentCustomer<maxCustomer){
            Instantiate(Customer,parentTransform);
             currentCustomer++;
@@ -47,8 +46,9 @@ public class GlobalManager : MonoBehaviour
     [ContextMenu("Increase Score")]
     public void addPoint()
     {
-        ScoreManager.AddScore();
+        customerScore++;
         Correct_ding.Play();
+        
     }
 
         IEnumerator WaitOneSecond()
