@@ -8,7 +8,7 @@ You’ve finally achieved your dream of working at Hungry Bytez\! But things mig
 
 \- Overcooked:  
   \- Medium: Game  
-  \- Explanation: The art style creates a welcoming environment despite the stressful situation. The game itself also simulates a restaurant managing experience, which will also be present in this game.  
+  \- Explanation: The art style creates a welcoming environment despite the stressful situation. The game itself also simulates a restaurant management experience, which will also be present in this game.  
 \- \*Papa’s Pizzeria\*:  
   \- Medium: Game  
   \- Explanation: How the customers give their orders allows for different food items with the same ingredients. Also, the “snobby” customers allow for some level of difficulty that makes sense in a restaurant scenario.
@@ -81,7 +81,7 @@ This is a game for one person, they type in commands on the screen and also clic
 \- Make Customers Happy:  
     \- Description: When a customer's order is correct, the customer is satisfied and becomes happy  
 \- Advance to the next day:  
-    \- Description: You need to make a certain amount of customers happy within a certain amount of time before you can advance to the next day.  
+    \- Description: You need to make a certain number of customers happy within a certain amount of time before you can advance to the next day.  
 \-Complete the Week:  
    \- Description: After completing all six days of the week (Mon-Sat), the player has finished the game and wins
 
@@ -108,7 +108,7 @@ When completing and sending orders, the player inputs commands to accomplish the
 \- There’s a small restaurant with multiple rooms for players to switch through  
 \- There are orders that need to be fulfilled and sent out by the player  
 \- There is a small notepad that represents a Git Console that will always be on display  
-\- Periodically instructions will appear on the screen
+\- Periodically, instructions will appear on the screen
 
 ## Core Gameplay Mechanics (Detailed)
 
@@ -116,7 +116,7 @@ When completing and sending orders, the player inputs commands to accomplish the
 \- Sending Out Orders to Customers: Players will be told to input specific git commands to fulfill different customer orders. They will be told to merge from specific branches for combined orders as well as modify recipe files in case a customer wants modifications.   
 \-Correct Orders: If you correctly fulfill an order, the customer will smile and eat their food.  
 \-Incorrect Orders: If you incorrectly fulfill an order, the customer will frown and walk out of the restaurant, giving you a bad review  
-\- Failing Day(s): If the player doesn’t fulfill enough orders, the player will be shown a failure screen. The screen will inform the player that they have gotten fired and they need to go find another job.  
+\- Failing Day(s): If the player doesn’t fulfill enough orders, the player will be shown a failure screen. The screen will inform the player that they have been fired and they need to go find another job.  
 \- All Days Complete: After working through all six days, the player will be done for the week, and a message will appear showing that their restaurant is successfully open for business.
 
       
@@ -140,7 +140,7 @@ When completing and sending orders, the player inputs commands to accomplish the
 
 \#\# Story (Brief)
 
-\-You just got a job at a new restaurant and you want to make sure you keep your job. Move fast through the restaurant using git commands, ensuring quality service at Hungry Bytez.
+\-You just got a job at a new restaurant, and you want to make sure you keep your job. Move fast through the restaurant using git commands, ensuring quality service at Hungry Bytez.
 
 ## Storyboarding
 ./assets/<Storyboard1.jpg>
@@ -160,7 +160,7 @@ When completing and sending orders, the player inputs commands to accomplish the
   \- Backgrounds:  
 	\-Kitchen: a static image of an industrial kitchen  
 	\-Front of restaurant: an image of the ordering station at the restaurant  
-	\-Cabinets: plain wooden cabinets that have the ingredients for the recipies  
+	\-Cabinets: plain wooden cabinets that have the ingredients for the recipes  
  
 
 ## Audio
@@ -172,8 +172,8 @@ When completing and sending orders, the player inputs commands to accomplish the
 
 \- Sound List (SFX)  
   \- Customer is happy with their order: ["Yippee" Sound Effect](https://www.youtube.com/watch?v=d1NjkYjRn34&ab_channel=YTSFX)  
-  \- Customer yells at you: To be Recorded  
   \-  New Customer comes in: [Hotel bell ringing - Sounds effect](https://www.youtube.com/watch?v=t7bxsTm4IyM&ab_channel=SparkleNeatcleaningServices)
+  \- Background Music: ["Swing Cuisine"](https://musicvine.com/track/jonny-boyle/swing-cuisine)
 
 # Metadata
 
