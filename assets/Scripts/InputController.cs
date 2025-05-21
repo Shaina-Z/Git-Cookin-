@@ -46,30 +46,30 @@ public class InputController : MonoBehaviour
         }
         if (inputText == "git pull bun")
         {
-            Instantiate(Bun, Placeholder.transform);
+            Instantiate(Bun, new Vector3(-33,15,Placeholder.transform.position.z),transform.rotation);
             Inventory.Add(Bun);
         }
         if (inputText == "git merge patty")
         {
-            Instantiate(PlainBurger);
+            Instantiate(PlainBurger,new Vector3(1517,320,Placeholder.transform.position.z),transform.rotation);
             DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
         }
         if (inputText == "git merge lettuce")
         {
             DestroyImmediate(GameObject.Find("Plainburger(Clone)"));
-            Instantiate(LettuceBurger);
+            Instantiate(LettuceBurger, new Vector3(538,477,Placeholder.transform.position.z), transform.rotation);
             DontDestroyOnLoad(GameObject.Find("LettuceBurger(Clone)"));
         }
         if (inputText == "git merge tomato")
         {
             DestroyImmediate(GameObject.Find("LettuceBurger(Clone)"));
-            Instantiate(ComboBurger);
+            Instantiate(ComboBurger,new Vector3(-53,465,Placeholder.transform.position.z),transform.rotation);
             DontDestroyOnLoad(GameObject.Find("ComboBurger(Clone)"));
         }
         if (inputText == "git merge onion")
         {
             DestroyImmediate(GameObject.Find("FullBurger(Clone)"));
-            Instantiate(FullBurger);
+            Instantiate(FullBurger,new Vector3(239,488,Placeholder.transform.position.z),transform.rotation);
             DontDestroyOnLoad(GameObject.Find("FullBurger(Clone)"));
         }
         if (inputText == "git commit"&& GameObject.Find("PlainBurger(Clone)"))
