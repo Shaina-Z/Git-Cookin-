@@ -166,10 +166,10 @@ When completing and sending orders, the player inputs commands to accomplish the
 ## Audio
 
 \- Music List (Ambient sound)  
-   \- Background Music: ["Swing Cuisine"](https://musicvine.com/track/jonny-boyle/swing-cuisine)
+   	\- Background Music: ["Swing Cuisine"](https://musicvine.com/track/jonny-boyle/swing-cuisine)
 \- Sound List (SFX)  
-  \- Customer is happy with their order: ["Yippee" Sound Effect](https://www.youtube.com/watch?v=d1NjkYjRn34&ab_channel=YTSFX)  
-  \-  New Customer comes in: [Hotel bell ringing - Sounds effect](https://www.youtube.com/watch?v=t7bxsTm4IyM&ab_channel=SparkleNeatcleaningServices)
+  	\- Customer is happy with their order: ["Yippee" Sound Effect](https://www.youtube.com/watch?v=d1NjkYjRn34&ab_channel=YTSFX)  
+  	\- New Customer comes in: [Hotel bell ringing - Sounds effect](https://www.youtube.com/watch?v=t7bxsTm4IyM&ab_channel=SparkleNeatcleaningServices)
 
 # Metadata
 
