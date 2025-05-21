@@ -637,6 +637,7 @@ MonoBehaviour:
   FullBurger: {fileID: 5424774221130361061, guid: c6ed0b0f7576c4cf8af5552ae5b010e9, type: 3}
   Placeholder: {fileID: 689440553}
   GlobalManager: {fileID: 0}
+  TextManager: {fileID: 0}
   Inventory: []
 --- !u!114 &415761331
 MonoBehaviour:
@@ -935,7 +936,7 @@ Transform:
   m_GameObject: {fileID: 689440553}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 496, y: -169, z: -13.532987}
+  m_LocalPosition: {x: 21, y: -106, z: -13.532987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
