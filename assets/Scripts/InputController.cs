@@ -70,7 +70,7 @@ public class InputController : MonoBehaviour
         }
         if (inputText == "git merge onion")
         {
-            DestroyImmediate(GameObject.Find("FullBurger(Clone)"));
+            DestroyImmediate(GameObject.Find("ComboBurger(Clone)"));
             Instantiate(FullBurger, new Vector3(239, 488, Placeholder.transform.position.z), transform.rotation);
             DontDestroyOnLoad(GameObject.Find("FullBurger(Clone)"));
         }
