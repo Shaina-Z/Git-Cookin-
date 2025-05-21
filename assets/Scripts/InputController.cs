@@ -10,15 +10,23 @@ public class InputController : MonoBehaviour
     public GameObject Patty;
     public GameObject Lettuce;
     public GameObject Tomato;
+    public GameObject Onion;
     public GameObject PlainBurger;
+    public GameObject LettuceBurger;
+
+    public GameObject ComboBurger;
+
+    public GameObject FullBurger;
     public GameObject Placeholder;
     public GlobalManager GlobalManager;
-    public List<GameObject> Inventory;
+    public TextManager TextManager;
+     public List<GameObject> Inventory;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
         GlobalManager = GameObject.FindGameObjectWithTag("GlobalManager").GetComponent<GlobalManager>();
+        TextManager = GameObject.FindGameObjectWithTag("TextManager").GetComponent<TextManager>();
     }
 
     // Update is called once per frame
@@ -46,21 +54,48 @@ public class InputController : MonoBehaviour
             Instantiate(PlainBurger);
             DontDestroyOnLoad(GameObject.Find("PlainBurger(Clone)"));
         }
-        if (inputText == "git commit" && GameObject.Find("PlainBurger(Clone)"))
+        if (inputText == "git merge lettuce")
+        {
+            DestroyImmediate(GameObject.Find("Plainburger(Clone)"));
+            Instantiate(LettuceBurger);
+            DontDestroyOnLoad(GameObject.Find("LettuceBurger(Clone)"));
+        }
+        if (inputText == "git merge tomato")
+        {
+            DestroyImmediate(GameObject.Find("LettuceBurger(Clone)"));
+            Instantiate(ComboBurger);
+            DontDestroyOnLoad(GameObject.Find("ComboBurger(Clone)"));
+        }
+        if (inputText == "git merge onion")
+        {
+            DestroyImmediate(GameObject.Find("FullBurger(Clone)"));
+            Instantiate(FullBurger);
+            DontDestroyOnLoad(GameObject.Find("FullBurger(Clone)"));
+        }
+        if (inputText == "git commit"&& GameObject.Find("PlainBurger(Clone)"))
         {
             GlobalManager.addPoint();
-        }
-    }
-
-
-    public class InputController : MonoBehaviour
-    {
-        public InputField inputField;
-        private string currentInputText = "";
-
-        void Start()
-        {
-            inputField.onValueChanged.AddListener(OnInputFieldValueChanged);
+        }// supposed to either add or remove points based on if the order is correct or not else{
+        //     GlobalManager.removePoint();
+        // }
+        // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
+        // {
+        //     GlobalManager.addPoint();
+        // }else{
+        //     GlobalManager.removePoint();
+        // }
+        // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[2] && GameObject.Find("ComboBurger(Clone)"))
+        // {
+        //     GlobalManager.addPoint();
+        // }else{
+        //     GlobalManager.removePoint();
+        // }
+        //  if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[3] && GameObject.Find("FullBurger(Clone)"))
+        // {
+        //     GlobalManager.addPoint();
+        // }else{
+        //     GlobalManager.removePoint();
+        // }
         }
 
         void Update()
@@ -95,4 +130,3 @@ public class InputController : MonoBehaviour
             currentInputText = inputText;
         }
     }
-}

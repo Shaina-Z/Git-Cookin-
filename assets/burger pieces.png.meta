@@ -318,7 +318,7 @@ TextureImporter:
         width: 350
         height: 331
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,6 +327,72 @@ TextureImporter:
       bones: []
       spriteID: 417026d51ddd24fe385c969579c10189
       internalID: 1378572605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burger pieces_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 446
+        width: 711
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cc7a6bd012747cc9c01d9309614e34
+      internalID: 1043028935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burger pieces_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 341
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54516c2e8517c48d5a40c04afa72f223
+      internalID: -1410046833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burger pieces_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 719
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24e1818c45d8418eb338384b0d41fd1
+      internalID: -324764739
       vertices: []
       indices: 
       edges: []
@@ -345,7 +411,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      burger pieces_10: -1410046833
+      burger pieces_11: -324764739
       burger pieces_8: 1378572605
+      burger pieces_9: 1043028935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
