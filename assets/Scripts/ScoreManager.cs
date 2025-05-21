@@ -13,14 +13,14 @@ public class ScoreManager : MonoBehaviour
     private void Awake() {
         if (Instance != null && Instance != this) {
             Destroy(this.gameObject);
-        } else {
+        } 
             Instance = this;
             DontDestroyOnLoad(gameObject); 
-        }
     }
 
     public void AddScore() {
-        customerScore++;
+        int points = 1;
+        customerScore+=points;
     }
     // Update is called once per frame
     void Update()

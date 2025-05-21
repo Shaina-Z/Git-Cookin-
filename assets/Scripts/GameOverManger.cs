@@ -9,13 +9,15 @@ public class GameOverManger : MonoBehaviour
     {
         TimeManager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         ScoreManager = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(TimeManager.GameTime>100&&ScoreManager.customerScore<5){
+        DontDestroyOnLoad(gameObject);
+        if (TimeManager.GameTime > 100 && ScoreManager.customerScore < 5)
+        {
             SceneManager.LoadScene("GameOver");
         }
     }
