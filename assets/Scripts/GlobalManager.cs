@@ -12,7 +12,7 @@ public class GlobalManager : MonoBehaviour
     public int despawnTime=30;
    public Text Score;
     public TimeManager TimeManager;
-    public int customerScore = 0; 
+    public static int customerScore = 0; 
     public int i = 1;
     AudioSource Correct_ding;
 
