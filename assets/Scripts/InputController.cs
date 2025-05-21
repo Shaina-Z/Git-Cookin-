@@ -76,11 +76,24 @@ public class InputController : MonoBehaviour
         }
         if (inputText == "git commit" && GameObject.Find("PlainBurger(Clone)"))
         {
+            DestroyImmediate(GameObject.Find("PlainBurger(Clone)"));
             GlobalManager.addPoint();
         }
         else if (inputText == "git commit" && !GameObject.Find("PlainBurger(Clone)"))
         {
             removePoint();
+        }else if(inputText == "git commit" && GameObject.Find("LettuceBurger(Clone)"))
+        {
+            DestroyImmediate(GameObject.Find("LettuceBurger(Clone)"));
+            GlobalManager.addPoint();
+        }else if(inputText == "git commit" && GameObject.Find("ComboBurger(Clone)"))
+        {
+            DestroyImmediate(GameObject.Find("ComboBurger(Clone)"));
+            GlobalManager.addPoint();
+        }else if(inputText == "git commit" && GameObject.Find("FullBurger(Clone)"))
+        {
+            DestroyImmediate(GameObject.Find("FullBurger(Clone)"));
+            GlobalManager.addPoint();
         }
         // if (inputText == "git commit" && TextManager.customerText.ToString()==TextManager.customerSayings[1] && GameObject.Find("LettuceBurger(Clone)"))
         // {
